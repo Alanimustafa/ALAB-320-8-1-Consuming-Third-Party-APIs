@@ -1,0 +1,16 @@
+.links {
+    text-decoration: none;
+    background-color: black;
+    color: wheat;
+    margin: 2vh;
+    padding: 10px;
+    border: white solid 2px;
+    cursor: pointer;
+    margin-left: 2vw;
+}
+
+.links:hover {
+    border: orange solid 2px;
+    box-shadow: red 0px 0px 5px ;
+    color: yellow;
+}
