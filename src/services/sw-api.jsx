@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import HomePage from "../pages/HomePage/HomaPage";
+import ShipPage from "../pages/StarsShipCard/ShipPage";
 import "./sw-api.css"
 
 export default function SWAPI (props) {
@@ -22,18 +23,15 @@ export default function SWAPI (props) {
     }
     ,[])
 
-
-    
-
     return (
         <>
-        
             <div className="allShipsDataContainer">
-                {allShips.map((ship, index) => (
-                    <HomePage key={index} ship={ship} />
+                {allShips.map((ships, name) => (
+                    <HomePage key={name} ships={ships} />
                 ))}
+
             </div>
-           
+
         </>
     )
 }

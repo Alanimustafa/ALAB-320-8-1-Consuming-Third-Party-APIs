@@ -7,7 +7,6 @@ export default function Nav (props) {
         <>
         <nav>
             <Link className="links" to="/">Home Page</Link>
-            
         </nav>
         </>
     )

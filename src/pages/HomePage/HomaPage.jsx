@@ -2,21 +2,21 @@ import SWAPI from "../../services/sw-api"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./HomePage.css"
+import ShipPage from "../StarsShipCard/ShipPage"
 
-export default function HomePage ({ship}) {
-    const [allShips,setAllShips] = useState(ship)
+export default function HomePage ({ships}) {
+    const [allShips,setAllShips] = useState(ships)
 
-    console.log(allShips)
+   // console.log(`The ship ${allShips.name}`)
     return (
         <>
             <div className="allShipsDisplayContainer">
-                 <Link className="shipdetailsLink" to='/ship'>
+                 <Link className="shipdetailsLink" to='/ship' >
                     <div className="shipName"> 
-                        {ship.name}
+                        {allShips.name}
                     </div>    
                  </Link>
             </div>
-            
             
         </>
         
